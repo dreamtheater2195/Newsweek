@@ -20,7 +20,7 @@
 
   <body>
     <div class="top-section">
-      <span>Get Full Digital Access When You Sign Up for Home Delivery. <a class="more-info" href="#">More Info</a></span>
+      <span class="hidden-xs hidden-sm">Get Full Digital Access When You Sign Up for Home Delivery. <a class="more-info" href="#">More Info</a></span>
       <div class="register">
         <a href="#">Register</a>
       </div>
@@ -31,13 +31,13 @@
     <header>
       <div class="header-wrapper">
         <div class="top-header">
-          <ul class="clearfix">
-            <li>
+          <ul>
+            <li class="global">
               <div class="dropdown pull-right">
   						  <div class="dropdown-toggle" data-toggle="dropdown">
   						    <span class="glyphicon glyphicon-globe"></span>
   							  <span class="glyphicon glyphicon-triangle-right"></span>
-                  <span>US Edition</span>
+                  <span class="hidden-xs hidden-sm">US Edition</span>
   						  </div>
   						  <ul class="dropdown-menu">
   						    <li><a href="#">US</a></li>
@@ -46,7 +46,7 @@
   						  </ul>
   						</div>
             </li>
-            <li>
+            <li class="social hidden-xs hidden-sm">
               <div class="dropdown pull-right">
                 <div class="dropdown-toggle" data-toggle="dropdown">
                   <span class="glyphicon glyphicon-heart"></span>
@@ -60,8 +60,23 @@
                 </ul>
               </div>
             </li>
-            <li>
-              <div class="input-group">
+            <li class="search">
+              <div class="dropdown hidden-md hidden-lg pull-right">
+						    <div class="dropdown-toggle" data-toggle="dropdown">
+						      <span class="glyphicon glyphicon-search"></span>
+						    </div>
+						    <ul class="dropdown-menu pull-left">
+						      <li>
+  		    	         <span class="glyphicon glyphicon-search"></span>
+  	                 <span class="glyphicon glyphicon-triangle-right"></span>
+                      <form action="#">
+                         <input type="search" name="searchsite" placeholder="Search for News">
+                         <input type="submit" name="submit-search" value="GO">
+                      </form>
+							    </li>
+						    </ul>
+						  </div>
+              <div>
   							<span class="glyphicon glyphicon-search"></span>
   							<span class="glyphicon glyphicon-triangle-right"></span>
   							<form action="#" class="hidden-xs hidden-sm" style="display: inline-block">
@@ -69,17 +84,35 @@
   							</form>
   						</div>
             </li>
-            <li class="trynewsweek">
+            <li class="trynewsweek hidden-xs hidden-sm">
   						<a href="#">
   							<p>Try Newsweek <span class="glyphicon glyphicon-triangle-right"></span></p>
   					</li>
+            <li class="sections hidden-md hidden-lg">
+						  <div class="dropdown pull-right">
+  							<div class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+  								<span class="glyphicon glyphicon-collapse-down"></span>
+  							</div>
+								<ul class="dropdown-menu">
+									<li><a href="#">U.S.</a></li>
+									<li><a href="#">WORLD</a></li>
+									<li><a href="#">BUSINESS</a></li>
+									<li><a href="#">TECH &amp; SCIENCE</a></li>
+									<li><a href="#">CULTURE</a></li>
+									<li><a href="#">SPORTS</a></li>
+									<li><a href="#">OPINION</a></li>
+									<li><a href="#">NEWS FEED</a></li>
+									<li><a href="#">THIS WEEK'S EDITION</a></li>
+								</ul>
+							</div>
+						</li>
           </ul>
         </div> <!-- top header -->
         <div class="main-menu clearfix">
           <div class="logo-wrapper">
   					<a href="#"><img src="images/logo.png" alt="Newsweek Logo" class="logo"></a>
   				</div>
-          <ul>
+          <ul class="visible-md visible-lg">
             <li><a href="#">U.S.</a></li>
   					<li><a href="#">WORLD</a></li>
   					<li><a href="#">BUSINESS</a></li>
@@ -94,7 +127,7 @@
       </div>
     </header>
 
-    <div class="main container">
+    <div class="main container-fluid">
       <div class="row">
         <div class="page-content">
           <div class="row main-article-image">
@@ -103,78 +136,6 @@
 						</div>
 					</div>
           <div class="row">
-            <div class="news-feed-bar">
-              <div class="side-bar-title">
-								<span class="glyphicon glyphicon-collapse-down"></span>
-								<p>NEWS FEED</p>
-							</div>
-              <ul>
-								<li>
-									<a href="#" class="category">World</a>
-									<a href="#">Ukraine Bans Silvio Berlusconi for Three Years After Crimea Visit: Reports</a>
-								</li>
-								<li>
-									<a href="#" class="category">U.S.</a>
-									<a href="#">American Airlines Working to Resume Flights After Technical Difficulties</a>
-								</li>
-								<li>
-									<a href="#" class="category">World</a>
-									<a href="#">U.K. Opposition Leader Jeremy Corbyn Says Labour Won't Campaign for EU Exit</a>
-								</li>
-								<li>
-									<a href="#" class="category">World</a>
-									<a href="#">Plane Makes Emergency Landing After Collision With Bird</a>
-								</li>
-								<li>
-									<a href="#" class="category">U.S</a>
-									<a href="#">Washington Wildfires Gave This Sea Otter Asthma, So Now She Has to Use Inhaler</a>
-								</li>
-								<li>
-									<a href="#" class="category">Sports</a>
-									<a href="#">FIFA Suspends Secretary General After World Cup Ticket Allegations</a>
-								</li>
-								<li>
-									<a href="#" class="category">World</a>
-									<a href="#">Mozambique Declares Itself Mine-Free</a>
-								</li>
-								<li>
-									<a href="#" class="category">Opinion</a>
-									<a href="#">Putin, Surrounded by Yes Men, Is Divorced From Reality</a>
-								</li>
-								<li>
-									<a href="#" class="category">Opinion</a>
-									<a href="#">The Handcuffing of Ahmed Tells Us Everything About His School</a>
-								</li>
-								<li>
-									<a href="#" class="category">Tech &amp; Science</a>
-									<a href="#"> GMO Butterflies, Made Naturally by Parasitic Wasps</a>
-								</li>
-								<li>
-									<a href="#" class="category">Culture</a>
-									<a href="#">Judd Apatow to Direct Pilot of HBO Comedy ‘Crashing’</a>
-								</li>
-								<li>
-									<a href="#" class="category">Culture</a>
-									<a href="#">A Brief History of Politicians Admitting to Smoking Weed</a>
-								</li>
-								<li>
-									<a href="#" class="category">World</a>
-									<a href="#"> U.S. Announces $89 Million in Humanitarian Aid to Yemen</a>
-								</li>
-								<li>
-									<a href="#" class="category">U.S.</a>
-									<a href="#">U.S. Federal Reserve Leaves Interest Rates Unchanged</a>
-								</li>
-								<li>
-									<a href="#" class="category">Opinion</a>
-									<a href="#">What Are Colleges Teaching Students? The Answer Is Disturbing</a>
-								</li>
-								<li>
-									<a href="#" class="category">Opinion</a>
-									<a href="#">Americans Aren’t Ready for an Interest Rate Hike—And Neither Is the Fed</a>
-								</li>
-							</ul>
-            </div> <!-- news feed -->
             <div class="articles">
               <div class="main-article">
                 <a href="#">The Fake Drug Industry Is Exploding, and We Can’t Do Anything About It</a>
@@ -308,9 +269,81 @@
 								<div style="clear: both;"></div>
 							</div>
             </div> <!-- content middle -->
+            <div class="news-feed-bar">
+              <div class="side-bar-title">
+								<span class="glyphicon glyphicon-collapse-down"></span>
+								<p>NEWS FEED</p>
+							</div>
+              <ul>
+								<li>
+									<a href="#" class="category">World</a>
+									<a href="#">Ukraine Bans Silvio Berlusconi for Three Years After Crimea Visit: Reports</a>
+								</li>
+								<li>
+									<a href="#" class="category">U.S.</a>
+									<a href="#">American Airlines Working to Resume Flights After Technical Difficulties</a>
+								</li>
+								<li>
+									<a href="#" class="category">World</a>
+									<a href="#">U.K. Opposition Leader Jeremy Corbyn Says Labour Won't Campaign for EU Exit</a>
+								</li>
+								<li>
+									<a href="#" class="category">World</a>
+									<a href="#">Plane Makes Emergency Landing After Collision With Bird</a>
+								</li>
+								<li>
+									<a href="#" class="category">U.S</a>
+									<a href="#">Washington Wildfires Gave This Sea Otter Asthma, So Now She Has to Use Inhaler</a>
+								</li>
+								<li>
+									<a href="#" class="category">Sports</a>
+									<a href="#">FIFA Suspends Secretary General After World Cup Ticket Allegations</a>
+								</li>
+								<li>
+									<a href="#" class="category">World</a>
+									<a href="#">Mozambique Declares Itself Mine-Free</a>
+								</li>
+								<li>
+									<a href="#" class="category">Opinion</a>
+									<a href="#">Putin, Surrounded by Yes Men, Is Divorced From Reality</a>
+								</li>
+								<li>
+									<a href="#" class="category">Opinion</a>
+									<a href="#">The Handcuffing of Ahmed Tells Us Everything About His School</a>
+								</li>
+								<li>
+									<a href="#" class="category">Tech &amp; Science</a>
+									<a href="#"> GMO Butterflies, Made Naturally by Parasitic Wasps</a>
+								</li>
+								<li>
+									<a href="#" class="category">Culture</a>
+									<a href="#">Judd Apatow to Direct Pilot of HBO Comedy ‘Crashing’</a>
+								</li>
+								<li>
+									<a href="#" class="category">Culture</a>
+									<a href="#">A Brief History of Politicians Admitting to Smoking Weed</a>
+								</li>
+								<li>
+									<a href="#" class="category">World</a>
+									<a href="#"> U.S. Announces $89 Million in Humanitarian Aid to Yemen</a>
+								</li>
+								<li>
+									<a href="#" class="category">U.S.</a>
+									<a href="#">U.S. Federal Reserve Leaves Interest Rates Unchanged</a>
+								</li>
+								<li>
+									<a href="#" class="category">Opinion</a>
+									<a href="#">What Are Colleges Teaching Students? The Answer Is Disturbing</a>
+								</li>
+								<li>
+									<a href="#" class="category">Opinion</a>
+									<a href="#">Americans Aren’t Ready for an Interest Rate Hike—And Neither Is the Fed</a>
+								</li>
+							</ul>
+            </div>
           </div>
         </div><!-- page content -->
-        <aside class="page-right">
+        <aside class="page-right hidden-sm">
           <div class="side-bar-box col-md-12">
 							<a href="#">
 								<img class="subscribe-box" src="images/subscribe-hi.png">
@@ -438,8 +471,8 @@
       </div>
     </div> <!-- main container -->
 
-    <footer>
-      <div class="footer-wrapper">
+    <footer class="hidden-xs hidden-sm">
+      <div class="footer-wrapper clearfix">
         <div class="top-footer">
           <div class="footer-article">
             <a href="#">
